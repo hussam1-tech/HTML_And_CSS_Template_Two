@@ -17,6 +17,9 @@
   padding: 0;
   margin: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -776,6 +779,11 @@ header .search .search-icon {
   font-size: 30px;
   font-weight: normal;
 }
+@media (max-width: 767px) {
+  .quote .container q {
+    font-size: 20px;
+  }
+}
 .quote .container q::before,
 .quote .container q::after {
   font-weight: 900;
@@ -934,7 +942,7 @@ header .search .search-icon {
 }
 @media (max-width: 767px) {
   .email .container .input input[type="email"] {
-    width: 220px;
+    width: 210px;
   }
 }
 .email .container .input input[type="email"]:focus {
@@ -961,6 +969,10 @@ header .search .search-icon {
 @media (max-width: 767px) {
   .email .container .input input[type="submit"] {
     padding: 0px 8px;
+  }
+  .email .container .input input[type="email"],
+  .email .container .input input[type="submit"] {
+    height: 50px;
   }
 }
 .email .container .input input[type="submit"]:hover {
