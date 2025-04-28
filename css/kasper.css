@@ -212,6 +212,12 @@ header .search .search-icon {
   cursor: pointer;
   --away-from-edge: 30px;
 }
+@media (max-width: 767px) {
+  .landing::before,
+  .landing::after {
+    display: none;
+  }
+}
 .landing::before {
   content: "\f104";
   left: var(--away-from-edge);
@@ -237,6 +243,11 @@ header .search .search-icon {
   padding: 45px;
   display: flex;
   justify-content: flex-end;
+}
+@media (max-width: 767px) {
+  .landing .text {
+    padding: 25px;
+  }
 }
 .landing .content {
   width: 500px;
@@ -493,19 +504,20 @@ header .search .search-icon {
 }
 .video .text button {
   background: none;
-  border: none
+  border: none;
 }
 @media (max-width: 767px) {
   .video .text {
     padding: 20px;
   }
   .video .text h2 {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    font-size: 20px;
   }
   .video .text p {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
-  .video .text button {
+  .video .text button a {
     margin: 0 auto;
   }
 }
@@ -773,11 +785,11 @@ header .search .search-icon {
   bottom: 10px;
 }
 .quote .container q::before {
-  content: '\f10d';
+  content: "\f10d";
   right: 10px;
 }
 .quote .container q::after {
-  content: '\f10e';
+  content: "\f10e";
   left: 10px;
 }
 .quote .container p {
@@ -922,7 +934,7 @@ header .search .search-icon {
 }
 @media (max-width: 767px) {
   .email .container .input input[type="email"] {
-    width: 250px;
+    width: 220px;
   }
 }
 .email .container .input input[type="email"]:focus {
@@ -945,6 +957,11 @@ header .search .search-icon {
   text-transform: uppercase;
   cursor: pointer;
   transition: var(--transition-time);
+}
+@media (max-width: 767px) {
+  .email .container .input input[type="submit"] {
+    padding: 0px 8px;
+  }
 }
 .email .container .input input[type="submit"]:hover {
   box-shadow: inset 0 0 0 30px var(--box-shadow-hover);
@@ -1045,7 +1062,7 @@ footer {
   position: relative;
 }
 footer::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
