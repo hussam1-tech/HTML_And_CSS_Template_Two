@@ -1,1 +1,0 @@
-let autoYear = document.querySelector("footer span").before(document.createTextNode((new Date).getFullYear()));

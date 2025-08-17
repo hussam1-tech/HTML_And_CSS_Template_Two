@@ -23,6 +23,15 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
 }
+.progress-page {
+  position: fixed;
+  top: 0;
+  height: 3px;
+  width: 0;
+  background-color: #2196f3;
+  transition: var(--transition-time);
+  z-index: 9999;
+}
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -134,13 +143,14 @@ header nav .burger-icon {
   display: none;
   color: #fff;
   font-size: 22px;
+  cursor: pointer;
 }
 @media (max-width: 767px) {
   header nav .burger-icon {
     display: block;
   }
 }
-header nav .burger-icon:hover + ul {
+header nav ul.active {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -149,7 +159,7 @@ header nav .burger-icon:hover + ul {
   width: 100%;
   background-color: var(--five-to-ten-overlay);
 }
-header nav .burger-icon:hover + ul a {
+header nav .burger-icon + ul.active a {
   padding: 15px;
 }
 header nav ul {
@@ -728,8 +738,10 @@ header .search .search-icon {
 .review .container .skills div span {
   position: relative;
   display: block;
+  width: 0;
   height: 100%;
   background-color: #19c8fa;
+  transition: ease 0.5s;
 }
 .review .container .skills div span::before {
   content: attr(data-text);

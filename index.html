@@ -15,6 +15,7 @@
     <title>Kasper | Template Two</title>
   </head>
   <body>
+    <div class="progress-page"></div>
     <header>
       <div class="container">
         <div class="logo">
@@ -230,23 +231,23 @@
         <div class="projects-content">
           <div class="text">
             <i class="fas fa-mug-hot"></i>
-            <div class="number">1.236</div>
+            <div class="number" data-num="336">0</div>
             <p>coffee drinks</p>
           </div>
           <div class="text">
             <i class="far fa-folder"></i>
-            <div class="number">256</div>
+            <div class="number" data-num="256">0</div>
             <p>completed projects</p>
           </div>
           <div class="text">
             <i class="far fa-envelope"></i>
-            <div class="number">1,743</div>
+            <div class="number" data-num="543">0</div>
             <p>mail sent</p>
           </div>
           <div class="text">
             <i class="fas fa-trophy"></i>
-            <div class="number">17</div>
-            <p>awards received</p>
+            <div class="number" data-num="667">0</div>
+            <p>days working</p>
           </div>
         </div>
       </div>
@@ -301,19 +302,19 @@
           </p>
           <h4>adobe</h4>
           <div class="first">
-            <span data-text="90%" style="width: 90%"></span>
+            <span data-text="90%"></span>
           </div>
           <h4>html & css</h4>
           <div class="second">
-            <span data-text="85%" style="width: 85%"></span>
+            <span data-text="85%"></span>
           </div>
           <h4>javascript</h4>
           <div class="third">
-            <span data-text="80%" style="width: 80%"></span>
+            <span data-text="80%"></span>
           </div>
           <h4>php</h4>
           <div class="fourth">
-            <span data-text="90%" style="width: 90%"></span>
+            <span data-text="90%"></span>
           </div>
         </div>
       </div>
@@ -414,7 +415,7 @@
             id="email"
             placeholder="Your Email"
           />
-          <input type="submit" value="subscribe">
+          <input type="submit" value="subscribe" />
         </div>
         <p>
           Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
@@ -430,12 +431,22 @@
           Mauris blandit aliquet elit, eget tincidunt.
         </p>
         <div class="contact-content">
-            <form action="">
-              <input type="text" name="name" id="name" placeholder="Your Name">
-              <input type="email" name="email" id="mail" placeholder="Your Email">
-              <textarea name="message" id="message" placeholder="Your Message" class="message"></textarea>
-              <input type="submit" value="send message">
-            </form>
+          <form action="">
+            <input type="text" name="name" id="name" placeholder="Your Name" />
+            <input
+              type="email"
+              name="email"
+              id="mail"
+              placeholder="Your Email"
+            />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Your Message"
+              class="message"
+            ></textarea>
+            <input type="submit" value="send message" />
+          </form>
           <div class="info">
             <div class="nums">
               <h4>Get In Touch</h4>
@@ -457,7 +468,7 @@
     </div>
     <footer>
       <div class="container">
-        <img src="images/logo.png" alt="logo" class="logo">
+        <img src="images/logo.png" alt="logo" class="logo" />
         <p>We Are Social</p>
         <div class="social">
           <i class="fab fa-facebook-f icon"></i>
@@ -468,6 +479,6 @@
         <p class="copy">&copy; <span> Kasper</span> All Right Reserved</p>
       </div>
     </footer>
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
