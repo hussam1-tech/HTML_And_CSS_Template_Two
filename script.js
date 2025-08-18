@@ -1,4 +1,3 @@
-
 let burgerMenu = document.querySelector("header nav .burger-icon");
 let ulHeader = document.querySelector("header nav ul");
 let autoYear = document
@@ -14,6 +13,14 @@ let skillsProg = document.querySelectorAll(".skills span");
 let duration = 3000;
 let startNum = false;
 let startProg = false;
+window.addEventListener("click", (e) => {
+  if (e.target === burgerMenu) {
+    ulHeader.classList.toggle("active");
+  } else {
+    if (ulHeader.classList.contains("active"))
+      ulHeader.classList.remove("active");
+  }
+});
 window.onscroll = () => {
   progressInPage.style.width = `${
     (document.documentElement.scrollTop * 100) / height
@@ -41,6 +48,3 @@ window.onscroll = () => {
     }
   }
 };
-burgerMenu.onclick = () => {
-  ulHeader.classList.toggle("active");
-}
