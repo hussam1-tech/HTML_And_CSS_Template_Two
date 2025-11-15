@@ -414,12 +414,19 @@ header .search .search-icon {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
 }
+.portfolio .portfolio-content {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
 .portfolio ul {
   display: flex;
+  flex-wrap: nowrap;
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
+  overflow-x: auto;
 }
 .portfolio ul a {
   padding: 10px 15px;
@@ -966,6 +973,11 @@ header .search .search-icon {
     width: 210px;
   }
 }
+@media (max-width: 420px) {
+  .email .container .input input[type="email"] {
+    width: 170px;
+  }
+}
 .email .container .input input[type="email"]:focus {
   outline: none;
 }
@@ -1005,6 +1017,11 @@ header .search .search-icon {
   display: flex;
   align-items: center;
   line-height: 1.7;
+}
+@media (max-width: 767px) {
+  .email .container p {
+    text-align: center;
+  }
 }
 /* End Email */
 /* Start Contact */
