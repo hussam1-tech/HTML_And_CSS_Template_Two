@@ -109,6 +109,10 @@ a {
   color: white;
   padding: 16px 24px;
 }
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
 /* End Components */
 /* Start Header */
 header {
@@ -209,8 +213,9 @@ header .search .search-icon {
 .landing {
   height: 100vh;
   position: relative;
-  background-image: url("../images/landing.jpg");
+  background-image: url("../images/landing.webp");
   background-size: cover;
+  background-position: center top;
 }
 .landing::before,
 .landing::after {
@@ -344,8 +349,9 @@ header .search .search-icon {
 .design {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
-  background-image: url(../images/design-features.jpg);
+  background-image: url(../images/design-features.webp);
   background-size: cover;
+  background-position: center;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -567,8 +573,9 @@ header .search .search-icon {
 .projects {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
-  background-image: url(../images/stats.png);
+  background-image: url(../images/stats.webp);
   background-size: cover;
+  background-position: center;
   position: relative;
 }
 .projects::before {
@@ -769,8 +776,9 @@ header .search .search-icon {
 .quote {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
-  background-image: url(../images/quote.jpg);
+  background-image: url(../images/quote.webp);
   background-size: cover;
+  background-position: center;
   position: relative;
 }
 .quote::before {
@@ -908,8 +916,9 @@ header .search .search-icon {
 .email {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
-  background-image: url(../images/subscribe.jpg);
+  background-image: url(../images/subscribe.webp);
   background-size: cover;
+  background-position: center;
   position: relative;
 }
 .email::before {
@@ -1082,8 +1091,9 @@ header .search .search-icon {
 footer {
   padding-top: calc(var(--section-padding) / 2);
   padding-bottom: calc(var(--section-padding) / 2);
-  background-image: url(../images/subscribe.jpg);
+  background-image: url(../images/subscribe.webp);
   background-size: cover;
+  background-position: center;
   position: relative;
 }
 footer::before {
