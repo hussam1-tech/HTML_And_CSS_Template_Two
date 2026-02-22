@@ -215,7 +215,7 @@ header .search .search-icon {
   position: relative;
   background-image: url("../images/landing.webp");
   background-size: cover;
-  background-position: center top;
+  background-position: 65% top;
 }
 .landing::before,
 .landing::after {
